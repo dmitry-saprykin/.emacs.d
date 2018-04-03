@@ -1,5 +1,5 @@
-(menu-bar-mode -1)
-(tool-bar-mode -1)
+;; (menu-bar-mode -1)
+;; (tool-bar-mode -1)
 
 (setq gc-cons-threshold 100000000)
 (setq inhibit-startup-message t)
@@ -36,9 +36,10 @@
 (use-package company
   :init
   (global-company-mode 1)
-  (delete 'company-semantic company-backends))
-;; (define-key c-mode-map  [(control tab)] 'company-complete)
-;; (define-key c++-mode-map  [(control tab)] 'company-complete)
+  (delete 'company-semantic company-backends)
+;;  (define-key c-mode-map  [(control tab)] 'company-complete)
+;;  (define-key c++-mode-map  [(control tab)] 'company-complete)
+)
 
 ;; Package: projejctile
 (use-package projectile
@@ -56,5 +57,6 @@
 ;; activate whitespace-mode to view all whitespace characters
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (windmove-default-keybindings)
+(global-linum-mode t)
 
 (provide 'setup-general)

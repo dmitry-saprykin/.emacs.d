@@ -1,0 +1,11 @@
+(add-to-list 'load-path "~/devel/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+(setq neo-smart-open t)
+(setq projectile-switch-project-action 'neotree-projectile-action)
+(setq neo-window-width 40)
+(neotree-dir "~/trunk/internal/c++/src/internal/ID/")
+(setq neo-hidden-regexp-list
+  '("^\\." "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "\\.o$" "\\.d$")
+)
+(provide 'setup-neotree)
