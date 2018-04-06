@@ -6,6 +6,7 @@
 (setq neo-window-width 40)
 (neotree-dir "~/trunk/internal/c++/src/internal/ID/")
 (setq neo-hidden-regexp-list
-  '("^\\." "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "\\.o$" "\\.d$")
+  '("^\\." "\\.pyc$" "~$" "^#.*#$" "\\.elc$" "\\.o$" "\\.d$" "^core\\.")
 )
+;(setq neo-theme 'nerd)
 (provide 'setup-neotree)
