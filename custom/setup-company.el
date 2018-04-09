@@ -10,4 +10,6 @@
 (add-to-list 'company-c-headers-path-system "/opt/ncbi/gcc/4.9.3/include/c++/4.9.3/")
 (custom-set-variables '(company-clang-arguments '("-std=c++11")))
 
+(put 'company-clang-arguments 'safe-local-variable (lambda (val) #'stringp))
+
 (provide 'setup-company)

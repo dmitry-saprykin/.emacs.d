@@ -20,8 +20,11 @@
 (require 'setup-cedet)
 (require 'setup-editing)
 (require 'setup-company)
+(require 'setup-projectile)
+(require 'setup-helm)
 (require 'setup-c)
 (require 'setup-neotree)
+(require 'setup-project-dirs)
 
 (global-set-key (kbd "C-x b") 'buffer-menu)
 
@@ -45,13 +48,10 @@
    (quote
     ("/home/saprykin/trunk/internal/c++/src/internal/ID/WGS_NEW")
     ("/home/saprykin/trunk/internal/c++/src/internal/ID/ipg")
-   ))
+    ("/home/saprykin/devel/id/id-blob-storage")))
  '(package-selected-packages
    (quote
-    (company-irony-c-headers company-quickhelp atom-dark-theme dired-imenu company-c-headers company-shell zygospore yasnippet ws-butler volatile-highlights use-package undo-tree dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
-)
-
-(put 'company-clang-arguments 'safe-local-variable (lambda (val) #'stringp))
+    (irony-eldoc company-irony-c-headers company-quickhelp atom-dark-theme dired-imenu company-c-headers company-shell zygospore yasnippet ws-butler volatile-highlights use-package undo-tree dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
