@@ -1,8 +1,7 @@
 (require 'package)
+(package-initialize)
 (add-to-list 'package-archives
          '("melpa" . "http://melpa.org/packages/") t)
-
-(package-initialize)
 
 (when (not package-archive-contents)
     (package-refresh-contents))
@@ -21,12 +20,12 @@
 (require 'setup-editing)
 (require 'setup-company)
 (require 'setup-projectile)
+(require 'setup-neotree)
 (require 'setup-helm)
 (require 'setup-c)
-(require 'setup-neotree)
 (require 'setup-project-dirs)
 
-(global-set-key (kbd "C-x b") 'buffer-menu)
+;(global-set-key (kbd "C-x b") 'buffer-menu)
 
 
 ;; function-args
