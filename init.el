@@ -1,7 +1,8 @@
 (require 'package)
 (package-initialize)
-(add-to-list 'package-archives
-         '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 
 (when (not package-archive-contents)
     (package-refresh-contents))
@@ -24,6 +25,7 @@
 (require 'setup-helm)
 (require 'setup-c)
 (require 'setup-project-dirs)
+(require 'setup-irony)
 
 ;(global-set-key (kbd "C-x b") 'buffer-menu)
 
@@ -50,7 +52,7 @@
     ("/home/saprykin/devel/id/id-blob-storage")))
  '(package-selected-packages
    (quote
-    (irony-eldoc company-irony-c-headers company-quickhelp atom-dark-theme dired-imenu company-c-headers company-shell zygospore yasnippet ws-butler volatile-highlights use-package undo-tree dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
+    (flycheck-irony company-irony irony-eldoc company-irony-c-headers company-quickhelp atom-dark-theme dired-imenu company-c-headers company-shell zygospore yasnippet ws-butler volatile-highlights use-package undo-tree dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
