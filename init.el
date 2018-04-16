@@ -41,3 +41,16 @@
 (setq custom-file (expand-file-name "custom.set.variables.el" user-emacs-directory))
 (when (file-exists-p custom-file)
     (load custom-file))
+
+(setq
+    backup-by-copying t      ; don't clobber symlinks
+    backup-directory-alist
+        `(("." . ,(expand-file-name "backups" user-emacs-directory)))    ; don't litter my fs tree
+    delete-old-versions -1
+    ;kept-new-versions 5
+    ;kept-old-versions 2
+    version-control t
+    vc-make-backup-files t
+    auto-save-file-name-transforms 
+        `((".*" ,(expand-file-name "auto-save-list" user-emacs-directory) t))
+    )       ; use versioned backups
