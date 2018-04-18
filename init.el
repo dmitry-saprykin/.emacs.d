@@ -1,11 +1,8 @@
 (require 'package)
-(setq package-enable-at-startup nil   ;Info node `(emacs) Package Installation'
-    ;; prefer melpa-stable, then the default source gnu, then others
-    package-archive-priorities '(("gnu"          . 10)
-                                 ("melpa-stable" . 5))
-    package-pinned-packages '((use-package . "melpa")))
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
-(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(when (< emacs-major-version 24)
+    (add-to-list 'package-archives '("elpa" . "https://elpa.gnu.org/packages/")))
 
 ;; NOTE: this call is probably the more expensive function call of the init file
 ;; but this is also the building block for the rest of the configuration
