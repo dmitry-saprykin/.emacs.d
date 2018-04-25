@@ -33,6 +33,8 @@
 ;Slow and unstable
 ;(require 'setup-irony)
 
+(require 'setup-rtags)
+
 ;(global-set-key (kbd "C-x b") 'buffer-menu)
 
 (setq custom-file (expand-file-name "custom.set.variables.el" user-emacs-directory))

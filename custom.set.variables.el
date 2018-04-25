@@ -17,7 +17,7 @@
     ("/home/saprykin/devel/id/id-blob-storage")))
  '(package-selected-packages
    (quote
-    (geben-helm-projectile helm-company company-anaconda flycheck-irony company-irony irony-eldoc company-irony-c-headers company-quickhelp atom-dark-theme dired-imenu company-c-headers company-shell zygospore yasnippet ws-butler volatile-highlights use-package undo-tree dtrt-indent counsel-projectile company clean-aindent-mode anzu helm projectile helm-projectile helm-core ggtags comment-dwim-2 async proceed))))
+    (ac-rtags geben-helm-projectile helm-company company-anaconda flycheck-irony company-irony irony-eldoc company-irony-c-headers company-quickhelp atom-dark-theme dired-imenu company-c-headers company-shell zygospore yasnippet ws-butler volatile-highlights use-package undo-tree dtrt-indent counsel-projectile company clean-aindent-mode anzu helm projectile helm-projectile helm-core ggtags comment-dwim-2 async proceed))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
