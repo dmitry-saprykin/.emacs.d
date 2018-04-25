@@ -25,7 +25,7 @@ cmake ../llvm-3.9.1.src \
   -DLLVM_ENABLE_RTTI=ON \
   -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ \
   -DCMAKE_CXX_FLAGS=-std=c++11
-make clang -j4
+make -j4
 make install
 ```
 
@@ -36,5 +36,7 @@ git clone --recursive https://github.com/Andersbakken/rtags.git
 cd rtags
 mkdir build
 cd build
-cmake -DLIBCLANG_LLVM_CONFIG_EXECUTABLE=$HOME/local/bin/llvm-config -DCMAKE_INSTALL_PREFIX:PATH=~/usr ..
+LIBCLANG_LLVM_CONFIG_EXECUTABLE=$HOME/local/bin/llvm-config cmake -DCMAKE_INSTALL_PREFIX:PATH=~/usr ..
+make -j4
+make install
 ```
