@@ -27,6 +27,7 @@
 (require 'setup-projectile)
 (require 'setup-neotree)
 (require 'setup-helm)
+;(require 'setup-helm-gtags)
 (require 'setup-c)
 (require 'setup-project-dirs)
 
