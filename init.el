@@ -35,6 +35,7 @@
 ;(require 'setup-irony)
 
 (require 'setup-rtags)
+(require 'setup-navigation)
 
 ;(global-set-key (kbd "C-x b") 'buffer-menu)
 
